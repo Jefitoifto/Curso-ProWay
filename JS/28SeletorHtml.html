@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletor HTML</title>
+
+    <!-- JS -->
+    <script>
+
+        function acao(){
+            //capturando texto h1 para exibir, em seguida dizendo qual h1 quero exibir, ou seja, a posição do h1
+          var exibir = document.getElementsByTagName("h1")[1];
+          alert(exibir.innerHTML);
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="acao()">Selecionar</button>
+    <h1>proway</h1>
+    <h1>Seletores JS</h1>
+    <h1>Curso Proway</h1>
+</body>
+</html>

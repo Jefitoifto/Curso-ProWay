@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Evento alteração</title>
+    <!-- JS -->
+
+    <script>
+        //Função
+        function msg() {
+            //aqui vou capturar a msg que o usuário irá selecionar
+            //obter o curso selecionado
+            //capturando elemento através do IDentificador "cursos", value significa valor do option
+            var curso = document.getElementById("cursos").value;
+
+            //exibir o curso selecionado
+            alert(curso);
+
+        }
+    </script>
+</head>
+
+<body>
+    <select onchange="msg()" id="cursos">
+        <option>Escolha seu curso</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+    </select>
+
+
+</body>
+
+</html>

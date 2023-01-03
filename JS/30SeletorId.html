@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletor ID</title>
+
+    <!-- JS -->
+    <script>
+
+        function exibirConteudo(){
+            var campo = document.getElementById("campo");
+            //Para todo input utilizamos o comando value, com o value tiramos o valor de um input
+            alert(campo.value);
+
+            //apagar o conteúdo
+            campo.value = "";
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="campo">
+    <button onclick="exibirConteudo()">Clique aqui</button>
+</body>
+</html>

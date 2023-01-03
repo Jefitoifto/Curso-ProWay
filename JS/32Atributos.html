@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atributos</title>
+
+    <!-- JS -->
+    <script>
+        //Função
+        function alterarLink(){
+            //Obter o link
+            var link = document.getElementsByTagName("a")[0];
+
+            //Alterar o link
+            link.href = "https://www.facebook.com";
+        }
+
+
+    </script>
+</head>
+<body>
+    <!-- o elemento a é a tag, e o href é a complementação -->
+    <a href="https://google.com.br">Clique aqui</a>
+    <button onclick="alterarLink()">Alterar</button>
+</body>
+</html>

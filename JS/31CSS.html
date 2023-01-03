@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- JS -->
+    <script>
+        function acao(){
+            //Obter o elemento h1
+            var texto = document.getElementsByTagName("h1")[0];
+
+            //CSS
+            texto.style.color = "#FF0000";
+            texto.style.fontSize = "50px";
+
+            //Alterar o conteúdo
+            //Quando o botão for clicado, irá capturar o meu elemento H1, estilizar a cor e o tamanho, e em seguida vai alterar o texto para Curso de JS
+            texto.innerHTML = "Curso de JavaScript";
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <button onclick="acao()">Clique aqui</button>
+</body>
+</html>
