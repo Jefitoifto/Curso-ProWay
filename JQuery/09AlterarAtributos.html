@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alterar atributos</title>
+
+    <!-- JQuery -->
+    <script src="jquery-3.6.3.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        //Executa toda ação linha a linha
+        
+        //Ao carregar o documento
+        $(document).ready(function(){
+        
+            //Selecionar e alterar o elemento img
+            //attr vem de atributo
+            $("img").attr("width","700");
+            $("img").attr("title","Alterando A3SL")
+        });
+    </script>
+</head>
+<body>
+    <img src="100k.png" width="100" title="A3 Stil Alive">
+</body>
+</html>

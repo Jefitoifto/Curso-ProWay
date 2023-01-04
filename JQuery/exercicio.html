@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>exercicio</title>
+
+    <!-- JQuery -->
+    <script src="jquery-3.6.3.min.js"></script>
+    <!-- Script -->
+    <script>
+        $(document).ready(function () {
+            $("#exibir").click(function(){
+                $("img").fadeIn();
+            });
+
+            $("#ocultar").click(function(){
+                $("img").fadeOut();
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <button id="exibir">exibir</button>
+    <button id="ocultar">ocultar</button>
+    <hr>
+    <img src="100k.png" alt="">
+</body>
+
+</html>

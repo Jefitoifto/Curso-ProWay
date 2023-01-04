@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+
+    <!-- JQuery -->
+    <script src="jquery-3.6.3.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        //Executa toda ação linha a linha
+
+        //Ao carregar o documento, inicie a função
+        $(document).ready(function () {
+
+            //Evento de click
+            //Aqui eu estou chamando o elemento button, colocando uma ação nele e especificando tudo que será feito.
+            $("button").click(function () {
+                $("h1").html("Você clicou no botão");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- A grande sacada do JQuery, é que você não coloca o disparador ou o gatilho do evento dentro da tag html, você especifica dentro do script. O código html garante o seguinte, entre o body não tem js. Deu problema no evento, trabalha ele em JS -->
+    <h1></h1>
+    <button>Clique aqui</button>
+</body>
+
+</html>

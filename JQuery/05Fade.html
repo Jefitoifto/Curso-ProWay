@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fade</title>
+
+    <!-- JQuery -->
+    <script src="jquery-3.6.3.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        //Executa toda ação linha a linha
+        
+        //Ao carregar o documento
+        $(document).ready(function(){
+        
+            //Ocultar h1
+            //Quando o documento for carregado, quero que o h1 não tenha visibilidade
+            $("h1").css("display","none");
+
+            //exibir o h1
+            $("#exibir").click(function(){
+                $("h1").fadeIn(); //exibir
+            });
+
+            //Ocultar o h1
+            $("#ocultar").click(function(){
+                $("h1").fadeOut();
+            })
+        });
+    </script>
+</head>
+<body>
+    <button id="ocultar">Ocultar</button>
+    <button id="exibir">Exibir</button>
+    <hr> <!-- linha -->
+    <h1>Aprendendo JQuery</h1>
+</body>
+</html>

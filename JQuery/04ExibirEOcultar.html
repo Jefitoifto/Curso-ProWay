@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- JQuery -->
+    <script src="jquery-3.6.3.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        //Executa toda ação linha a linha
+        //Ao carregar o documento
+        
+        $(document).ready(function () {
+
+            //exibir id
+            $("#exibir").click(function () {
+                $("img").show();
+            });
+            //ocultar id
+            $("#ocultar").click(function () {
+                $("img").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <br>
+    <img src="logo_proway.png">
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura base - JQuery</title>
+
+    <!-- JQuery -->
+    <script src="jquery-3.6.3.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        //Executa toda ação linha a linha
+        
+        //Ao carregar o documento
+        $(document).ready(function(){
+            //value html
+            var campo = $("input").val();
+            //textos ID
+            var titulo = $("#titulo").html();
+            //classe
+            var substituto = $(".substituto").html();
+
+            //Exibir
+            alert(campo);
+            alert(titulo);
+            alert(substituto);
+
+        });
+    </script>
+</head>
+<body>
+    <!-- Aqui nós temos um comando totalmente em html, iremos puxar o input através da tag "html" -->
+    <input type="text" value="Campo nome">
+    <!-- aqui iremos puxar através do "id" -->
+    <h1 id="titulo">Titulo em h1</h1>
+    <!-- aqui iremos puxar através da class -->
+    <h2 class="substituto">Título em h2</h2>
+</body>
+</html>
